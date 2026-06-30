@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Copiloto de Inversión — 1 señal gratis cada semana</title>
+<meta name="description" content="Recibe gratis una señal de inversión cada semana por WhatsApp. El copiloto vigila el mercado 24/7 y te avisa cuándo entrar y salir." />
+<style>
+  :root{
+    --bg:#0a0a0b;
+    --bg2:#111114;
+    --lime:#c3f53c;
+    --text:#f4f4f5;
+    --muted:#a1a1aa;
+    --border:#27272a;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    background:var(--bg);color:var(--text);line-height:1.55;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:680px;margin:0 auto;padding:0 22px}
+  .pill{display:inline-block;background:rgba(195,245,60,.12);color:var(--lime);
+    border:1px solid rgba(195,245,60,.3);border-radius:999px;
+    padding:6px 14px;font-size:13px;font-weight:600;letter-spacing:.3px;margin-bottom:22px}
+  header{padding:64px 0 40px;text-align:center}
+  h1{font-size:clamp(30px,6vw,46px);line-height:1.1;font-weight:800;letter-spacing:-.5px}
+  h1 .hl{color:var(--lime)}
+  .sub{color:var(--muted);font-size:clamp(16px,2.6vw,19px);margin-top:18px;max-width:560px;margin-left:auto;margin-right:auto}
+
+  .card{background:var(--bg2);border:1px solid var(--border);border-radius:18px;padding:28px;margin:18px 0}
+
+  /* Form */
+  #lead{margin:34px 0}
+  .field{margin-bottom:14px;text-align:left}
+  label{display:block;font-size:13px;color:var(--muted);margin-bottom:7px;font-weight:600}
+  input{width:100%;background:#0e0e10;border:1px solid var(--border);border-radius:12px;
+    color:var(--text);padding:14px 15px;font-size:16px;outline:none;transition:border .15s}
+  input:focus{border-color:var(--lime)}
+  .btn{width:100%;background:var(--lime);color:#0a0a0b;border:none;border-radius:12px;
+    padding:16px;font-size:17px;font-weight:800;cursor:pointer;margin-top:8px;transition:transform .08s,filter .15s}
+  .btn:hover{filter:brightness(1.05)}
+  .btn:active{transform:scale(.99)}
+  .reassure{font-size:12.5px;color:var(--muted);text-align:center;margin-top:12px}
+
+  /* Steps */
+  .steps{display:grid;gap:14px;margin-top:10px}
+  .step{display:flex;gap:14px;align-items:flex-start}
+  .num{flex:none;width:34px;height:34px;border-radius:10px;background:rgba(195,245,60,.12);
+    color:var(--lime);display:flex;align-items:center;justify-content:center;font-weight:800;border:1px solid rgba(195,245,60,.25)}
+  .step b{display:block;margin-bottom:2px}
+  .step p{color:var(--muted);font-size:14.5px}
+
+  .pain li{list-style:none;padding:10px 0;border-bottom:1px solid var(--border);color:var(--muted)}
+  .pain li:last-child{border:none}
+  .pain b{color:var(--text)}
+
+  h2{font-size:22px;font-weight:800;margin-bottom:16px;letter-spacing:-.3px}
+  .center{text-align:center}
+
+  /* Disclaimer */
+  footer{padding:40px 0 60px;text-align:center}
+  .disclaimer{font-size:12px;color:#71717a;max-width:600px;margin:0 auto;line-height:1.6}
+  .brand{margin-top:26px;color:var(--muted);font-size:13px}
+  .brand b{color:var(--lime)}
+
+  .toast{position:fixed;left:50%;bottom:26px;transform:translateX(-50%) translateY(120px);
+    background:var(--lime);color:#0a0a0b;font-weight:700;padding:14px 22px;border-radius:12px;
+    transition:transform .3s;z-index:50}
+  .toast.show{transform:translateX(-50%) translateY(0)}
+</style>
+</head>
+<body>
+  <div class="wrap">
+
+    <header>
+      <span class="pill">🟢 Gratis · 1 señal por semana</span>
+      <h1>Tu <span class="hl">copiloto de inversión</span> vigila el mercado por ti.</h1>
+      <p class="sub">Recibe cada semana, gratis y por WhatsApp, una señal con el momento exacto de entrar y salir. Sin estar pegado a la pantalla. Sin invertir por nervios.</p>
+
+      <form id="lead">
+        <div class="field">
+          <label for="nombre">Tu nombre</label>
+          <input id="nombre" name="nombre" type="text" placeholder="Ej. Edmundo" required />
+        </div>
+        <div class="field">
+          <label for="whatsapp">Tu WhatsApp (con lada)</label>
+          <input id="whatsapp" name="whatsapp" type="tel" inputmode="numeric" placeholder="Ej. 442 123 4567" required />
+        </div>
+        <button class="btn" type="submit">Quiero mi señal gratis →</button>
+        <p class="reassure">Sin costo. Sin spam. Cancela cuando quieras con un mensaje.</p>
+      </form>
+    </header>
+
+    <!-- DOLOR -->
+    <div class="card pain">
+      <h2>Si inviertes, seguro te ha pasado:</h2>
+      <ul>
+        <li>⏰ <b>No tienes tiempo</b> de estar viendo gráficas todo el día.</li>
+        <li>😰 <b>Vendiste por miedo</b> y luego el precio subió.</li>
+        <li>🤷 <b>No supiste cuándo salir</b> y se te fue la ganancia.</li>
+      </ul>
+    </div>
+
+    <!-- CÓMO FUNCIONA -->
+    <div class="card">
+      <h2>Cómo funciona</h2>
+      <div class="steps">
+        <div class="step"><div class="num">1</div><div><b>El copiloto vigila el mercado 24/7</b><p>Reglas frías, sin emoción: solo entra cuando el riesgo/beneficio vale la pena.</p></div></div>
+        <div class="step"><div class="num">2</div><div><b>Te avisa por WhatsApp</b><p>Recibes la señal con entrada, stop-loss y objetivo. Clarito.</p></div></div>
+        <div class="step"><div class="num">3</div><div><b>Tú decides</b><p>Tu cuenta, tu dinero, tú tienes el control. El copiloto solo te avisa.</p></div></div>
+      </div>
+    </div>
+
+    <!-- PRUEBA -->
+    <div class="card center">
+      <h2>Vas a ver resultados reales</h2>
+      <p class="sub" style="margin:0">Cada semana publicamos el desempeño real del sistema — sin retoques. Tú juzgas si te sirve, sin gastar un peso.</p>
+    </div>
+
+    <!-- CTA FINAL -->
+    <div class="card center">
+      <h2>Empieza gratis hoy</h2>
+      <p class="sub" style="margin:0 0 18px">Una señal cada semana, directa a tu WhatsApp.</p>
+      <button class="btn" style="max-width:340px;margin:0 auto;display:block" onclick="document.getElementById('nombre').focus();window.scrollTo({top:0,behavior:'smooth'})">Quiero mi señal gratis →</button>
+    </div>
+
+    <footer>
+      <p class="disclaimer">
+        <b>Aviso importante:</b> Contexto Digital ofrece una herramienta de software y señales con fines informativos y educativos. <b>No</b> garantizamos rendimientos, <b>no</b> administramos tu dinero ni tenemos acceso a tus cuentas, y <b>no</b> somos asesores de inversión registrados ante la CNBV. Toda inversión implica riesgo de pérdida. El desempeño pasado no garantiza resultados futuros. Las decisiones de inversión son tu responsabilidad. Invierte solo capital que estés dispuesto a arriesgar.
+      </p>
+      <p class="brand">Hecho por <b>Contexto Digital</b> · Querétaro</p>
+    </footer>
+
+  </div>
+
+  <div class="toast" id="toast">✅ ¡Listo! Te escribimos por WhatsApp en breve.</div>
+
+<script>
+  // ====== CONFIGURACIÓN ======
+  // Pega aquí tu webhook de n8n para recibir los leads (nombre + whatsapp):
+  const N8N_WEBHOOK = ""; // ej: "https://n8n.linkderenta.com/webhook/lead-copiloto"
+  // Fallback: si no hay webhook, abre WhatsApp hacia tu número:
+  const WHATSAPP_DESTINO = "5214426330248"; // tu número de pruebas; cámbialo al de ventas
+
+  const form = document.getElementById('lead');
+  const toast = document.getElementById('toast');
+
+  form.addEventListener('submit', async function(e){
+    e.preventDefault();
+    const nombre = document.getElementById('nombre').value.trim();
+    const whatsapp = document.getElementById('whatsapp').value.trim();
+    if(!nombre || !whatsapp) return;
+
+    // 1) Si hay webhook de n8n, manda el lead ahí
+    if(N8N_WEBHOOK){
+      try{
+        await fetch(N8N_WEBHOOK,{
+          method:'POST',
+          headers:{'Content-Type':'application/json'},
+          body:JSON.stringify({nombre,whatsapp,fuente:'landing-carnada',fecha:new Date().toISOString()})
+        });
+        showToast();
+        form.reset();
+        return;
+      }catch(err){ /* si falla, cae al fallback de abajo */ }
+    }
+
+    // 2) Fallback sin webhook: abre WhatsApp con el mensaje prellenado
+    const msg = encodeURIComponent(`Hola, soy ${nombre}. Quiero recibir la señal gratis del copiloto de inversión 🟢`);
+    window.open(`https://wa.me/${WHATSAPP_DESTINO}?text=${msg}`,'_blank');
+    showToast();
+    form.reset();
+  });
+
+  function showToast(){
+    toast.classList.add('show');
+    setTimeout(()=>toast.classList.remove('show'),4000);
+  }
+</script>
+</body>
+</html>
